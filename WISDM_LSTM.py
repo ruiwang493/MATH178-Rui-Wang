@@ -83,7 +83,6 @@ data_convoluted = []
 labels = []
 
 # Slide a "SEGMENT_TIME_SIZE" wide window with a step size of "TIME_STEP"
-# Pre-processing code from https://github.com/bartkowiaktomasz/har-wisdm-lstm-rnns
 for i in range(0, len(data) - segment_time_size, time_step):
     x = data['x-axis'].values[i: i + segment_time_size]
     y = data['y-axis'].values[i: i + segment_time_size]
