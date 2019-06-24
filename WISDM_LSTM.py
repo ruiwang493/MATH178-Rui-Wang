@@ -233,6 +233,6 @@ with torch.no_grad():
         
     print('Test Accuracy of the model on the data in the test_loader: {} %'.format(100 * correct / total))
     
-    # Save the model weights with information in name
+    # Save the model weights with information in names
     
     torch.save(model.state_dict(), "./wisdm_weights/verif_" + str(round(100 * correct / total, 3)) + "acc")
